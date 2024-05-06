@@ -3,19 +3,10 @@
 // Execute `rustlings hint strings3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn trim_me(input: &str) -> String {
     // TODO: Remove whitespace from both ends of a string!
-    let bytes = input.as_bytes();
-
-    let mut x = vec![];
-    for (i, &item) in bytes.iter().enumerate() {
-        if item != b' ' {
-            x.push(&input[i..i+2]);
-        }
-    }
-    x
+    input.trim().to_string()
 }
 
 
